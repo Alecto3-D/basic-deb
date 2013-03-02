@@ -24,6 +24,7 @@ This will be installed to /var/www/foo
 
 ## Building
 
-1. Use `debchange` to edit the `changelog`.
-2. Run `fakeroot debian/rules binary`
+1. Use `debchange` to edit the `changelog`. Make sure to change the package name. Have a look at the man page for debchange, it has some nice options. For subsequent versions of your package, it's probably easiest to use debchange --increment
+2. Edit debian/rules to set package section.
+3. Run `fakeroot debian/rules binary`
 
